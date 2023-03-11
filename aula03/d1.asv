@@ -1,0 +1,13 @@
+%x(t)=A*sen(2pi*f0*t)    f0=frequencia    T=1/f0
+ta=0.001;
+t=0:ta:((1/3)*4);
+t1=0:ta:((1/4)*4);
+f=M(t,t1);
+x=sin(6*pi*f)+sin(8*pi*f);
+
+
+plot(t,x);
+figure(1)
+xlabel("Tempo (s)")
+ylabel("Amplitude (A)")
+title("Sinal D")
